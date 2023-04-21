@@ -1,0 +1,28 @@
+<%- include('partials/header') %>
+
+  <h1>
+    Posts
+  </h1>
+
+  <table>
+    <thead>
+      <tr>
+        <td>User Id</td>
+        <td>id</td>
+        <td>title</td>
+        <td>body</td>
+      </tr>
+    </thead>
+    <tbody>
+      <% for (const post of posts) { %>
+        <tr>
+          <td><%= post.userId %></td>
+          <td><%= post.id %></td>
+          <td><%= post.title %></td>
+          <td><%= post.body %></td>
+        </tr>
+      <% } %>
+    </tbody>
+  </table>
+
+<%- include('partials/footer') %>
