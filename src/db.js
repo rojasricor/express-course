@@ -6,9 +6,9 @@ async function connectDB() {
     user: "admin",
     password: "admin",
     database: "itfip",
-    ssl: {
-      rejectUnauthorized: false,
-    },
+    // ssl: {
+    //   rejectUnauthorized: false,
+    // },
   });
 
   const result = await connection.query("SELECT 'helloworld' as message");
